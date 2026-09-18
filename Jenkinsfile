@@ -24,7 +24,7 @@ pipeline {
             steps {
                 sh 'docker stop student-application-container || true'
                 sh 'docker rm student-application-container || true'
-                sh 'docker run -d --name student-application-container -p 8080:8080 student-application:latest'
+                sh 'docker run -d --name student-application-container -p 8081:8080 student-application:latest'
             }
         }
     }
