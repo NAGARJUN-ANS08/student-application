@@ -12,12 +12,12 @@ class StudentServiceTest {
     void testAddStudent() {
         StudentService service = new StudentService();
 
-        Student student = new Student(null, "Ananya", "ananya@example.com");
+        Student student = new Student(null, "Nagarjun", "nagarjun@example.com");
 
         Student result = service.addStudent(student);
 
         assertEquals(1L, result.getId());
-        assertEquals("Ananya", result.getName());
-        assertEquals("ananya@example.com", result.getEmail());
+        assertEquals("Nagarjun", result.getName());
+        assertEquals("nagarjun@example.com", result.getEmail());
     }
 }
